@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .content {
+            width: 100%;
+            max-width: 600px;
+            margin: 3rem auto;
+            font-family: Calibri, sans-serif;    
+        }
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            -webkit-transform: scale(1,-1);
+            transform: scale(1,-1);
+            margin: 45px 0;
+        }
+        .table-container::-webkit-scrollbar {
+          width: 12px;
+          height: 12px;
+          background-color: #f2f2f2;
+          border-radius: 20px;
+        }
+        .table-container::-webkit-scrollbar-thumb {
+          border-radius: 20px;
+          background-color: #0968AD;
+        }
+        .styled-table {
+            -webkit-transform: scale(1,-1);
+            transform: scale(1,-1);
+            margin: 0 0 25px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        .table-container .styled-table thead tr td {
+            background: #0968ad;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+        }
+        .table-container .styled-table td {
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f8f8f8;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #333;
+        }
+    </style>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="table-container">
+            <table class="styled-table">
+            <thead>
+            <tr>
+                <td width="150">
+                     Название налога, взноса
+                </td>
+                <td width="150">
+                     Период просрочки в днях
+                </td>
+                <td width="150">
+                     Ключевая ставка Банка России, %
+                </td>
+                <td width="250">
+                     Порядок расчета
+                </td>
+                <td width="100">
+                     Размер пеней, руб.
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                     Налог на имущество
+                </td>
+                <td>
+                     21
+                </td>
+                <td>
+                     8
+                </td>
+                <td>
+                     380 000 х 21 х 8 / 300
+                </td>
+                <td>
+                     2 128,00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     ОПС
+                </td>
+                <td>
+                     7
+                </td>
+                <td>
+                     8
+                </td>
+                <td>
+                     58 000 х 7 х 8 /300
+                </td>
+                <td>
+                     108,27
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     ОМС
+                </td>
+                <td>
+                     7
+                </td>
+                <td>
+                     8
+                </td>
+                <td>
+                     13 426 х 7 х 8 / 300
+                </td>
+                <td>
+                     25,06
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     ВНиМ
+                </td>
+                <td>
+                     7
+                </td>
+                <td>
+                     8
+                </td>
+                <td>
+                     7 646 х 7 х 8 / 300
+                </td>
+                <td>
+                     14,27
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                     ИТОГО пеней
+                </td>
+                <td>
+                     2 275,60
+                </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</body>
+</html>
